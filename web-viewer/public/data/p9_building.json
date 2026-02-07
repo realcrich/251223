@@ -173,7 +173,7 @@
   "parking": {
     "surface_stalls": 4,
     "podium_stalls": 0,
-    "underground_stalls": 0,
+    "underground_stalls": 60,
     "indoor_parking_sf": 0,
     "surface_lot_sf": 1700,
     "loading_dock_sf": 500,
