@@ -141,6 +141,17 @@ export const EditableFloorPlanViewer: React.FC<EditableFloorPlanViewerProps> = (
     });
   }, [transform]);
 
+  // Button zoom — zoom toward center of current view
+  const zoomBy = useCallback((factor: number) => {
+    const newZoom = Math.max(0.5, Math.min(5, zoomLevel * factor));
+    const cx = viewBox.x + viewBox.width / 2;
+    const cy = viewBox.y + viewBox.height / 2;
+    const newWidth = transform.svgWidth / newZoom;
+    const newHeight = transform.svgHeight / newZoom;
+    setZoomLevel(newZoom);
+    setViewBox({ x: cx - newWidth / 2, y: cy - newHeight / 2, width: newWidth, height: newHeight });
+  }, [viewBox, zoomLevel, transform]);
+
   // Use editable spaces if provided, otherwise use floor.spaces
   const spaces = useMemo(() => {
     if (editableSpaces && editableSpaces.length > 0) {
@@ -170,12 +181,12 @@ export const EditableFloorPlanViewer: React.FC<EditableFloorPlanViewerProps> = (
         gap: 4,
       }}>
         <button
-          onClick={() => handleWheel({ deltaY: -100, preventDefault: () => {} } as React.WheelEvent)}
+          onClick={() => zoomBy(1.25)}
           style={zoomButtonStyle}
           title="Zoom In"
         >+</button>
         <button
-          onClick={() => handleWheel({ deltaY: 100, preventDefault: () => {} } as React.WheelEvent)}
+          onClick={() => zoomBy(0.8)}
           style={zoomButtonStyle}
           title="Zoom Out"
         >−</button>

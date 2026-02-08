@@ -441,38 +441,46 @@ function generateParkingFloor(
   }
 
   if (totalStalls > 0) {
-    // Double-loaded parking layout: max 2 rows deep per aisle side (back-to-back)
-    // Cars access from front or back only, so no stall is more than 2 deep from an aisle.
+    // Block-based parking: 5×2 bays (5 stalls wide × 2 deep) with aisles between.
+    // Each bay is one rectangle; cleaner layout, more efficient space use.
     //
-    //   | outer-N | (backs touch inner-N)
-    //   | inner-N | (fronts face aisle)
-    //   ═══════════ DRIVE AISLE ═══════════
-    //   | inner-S | (fronts face aisle)
-    //   | outer-S | (backs touch inner-S)
+    //   ┌─────────┐  ┌─────────┐
+    //   │ 5×2 bay │  │ 5×2 bay │   ← north bays (2 rows back-to-back)
+    //   └─────────┘  └─────────┘
+    //   ═══════════════════════════  ← drive aisle (implicit)
+    //   ┌─────────┐  ┌─────────┐
+    //   │ 5×2 bay │  │ 5×2 bay │   ← south bays
+    //   └─────────┘  └─────────┘
+
+    const STALLS_PER_BAY = 10; // 5 wide × 2 deep
+    const BAY_W = 5 * STALL_WIDTH;         // 45 ft
+    const BAY_H = 2 * STALL_DEPTH;         // 36 ft
+    const BAY_GAP = 2;                      // gap between adjacent bays
 
     const aisleW = Math.min(2 * h - 30, 80) * roomScale;
     // Reserve aisle footprint for collision detection (implicit — not rendered)
     placedBounds.push({ x: 0, y: 0, width: aisleW, height: AISLE_WIDTH });
 
-    // 4 row Y-positions (inner = adjacent to aisle, outer = back-to-back with inner)
-    const innerNorthY = -AISLE_WIDTH / 2 - STALL_DEPTH / 2;
-    const outerNorthY = innerNorthY - STALL_DEPTH;
-    const innerSouthY = AISLE_WIDTH / 2 + STALL_DEPTH / 2;
-    const outerSouthY = innerSouthY + STALL_DEPTH;
+    const northY = -AISLE_WIDTH / 2 - BAY_H / 2;
+    const southY = AISLE_WIDTH / 2 + BAY_H / 2;
 
-    const rowYPositions = [innerNorthY, innerSouthY, outerNorthY, outerSouthY];
-    const startX = -h + MARGIN;
-    let stallCount = 0;
+    const numBays = Math.ceil(totalStalls / STALLS_PER_BAY);
+    let bayCount = 0;
+    let stallsPlaced = 0;
 
-    for (const rowY of rowYPositions) {
-      for (let col = 0; stallCount < totalStalls && col < 30; col++) {
-        const x = startX + col * STALL_WIDTH + STALL_WIDTH / 2;
+    for (const rowY of [northY, southY]) {
+      const startX = -h + MARGIN + BAY_W / 2;
+      for (let col = 0; bayCount < numBays && stallsPlaced < totalStalls; col++) {
+        const x = startX + col * (BAY_W + BAY_GAP);
+        const stallsInBay = Math.min(STALLS_PER_BAY, totalStalls - stallsPlaced);
         safelyPlaceSpace(
           spaces, placedBounds,
-          `parking_${stallCount + 1}_f${floorIdx}`, 'PARKING', `P${stallCount + 1}`, floorIdx,
-          x, rowY, STALL_WIDTH - 0.5, STALL_DEPTH, false, boundary, boundaryPolygon
+          `parking_bay_${bayCount + 1}_f${floorIdx}`, 'PARKING',
+          `P${stallsPlaced + 1}-${stallsPlaced + stallsInBay}`, floorIdx,
+          x, rowY, BAY_W, BAY_H, false, boundary, boundaryPolygon
         );
-        stallCount++;
+        stallsPlaced += stallsInBay;
+        bayCount++;
       }
     }
   }
@@ -848,7 +856,7 @@ function generateResidentialFloorRadialSlice(
   coreWidth: number,
   coreHeight: number,
 ): void {
-  const CORRIDOR_W = 5;
+  const CORRIDOR_W = 9;  // Wide enough for regulation-size access past BOH rooms at corners
   const coreHalfW = coreWidth / 2;
   const coreHalfH = coreHeight / 2;
 
@@ -862,8 +870,6 @@ function generateResidentialFloorRadialSlice(
   //    No corridor spaces rendered; corridorRing dimensions still used for ray-casting.
 
   // 3. Support rooms at corridor ring dead corners (inside the ring, not outside)
-  // The 4 corners where N/S corridor meets E/W corridor are CORRIDOR_W × CORRIDOR_W
-  // squares with no pass-through traffic — perfect for BOH rooms.
   const SUPPORT_W = 5;
   const SUPPORT_H = 5;
   const supportPositions = [

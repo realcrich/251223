@@ -7,8 +7,8 @@
   "metrics": {
     "placement_rate": "100.0%",
     "avg_membership": "1.00",
-    "total_spaces": 198,
-    "placed_spaces": 198
+    "total_spaces": 165,
+    "placed_spaces": 165
   },
   "building": {
     "floors": [
@@ -228,631 +228,37 @@
             "is_vertical": false
           },
           {
-            "id": "parking_1_f-1",
+            "id": "parking_bay_1_f-1",
             "type": "PARKING",
-            "name": "P1",
+            "name": "P1-10",
             "floor_index": -1,
             "geometry": {
-              "x": -20.426300639484708,
-              "y": -25.08232369486271,
-              "width": 8.5,
-              "height": 17,
+              "x": -12.426300639484708,
+              "y": 42.91767630513729,
+              "width": 45,
+              "height": 34,
               "rotation": 0
             },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
+            "target_area_sf": 1530,
+            "actual_area_sf": 1530,
             "membership": 1,
             "area_deviation": "+0.0%",
             "is_vertical": false
           },
           {
-            "id": "parking_2_f-1",
+            "id": "parking_bay_2_f-1",
             "type": "PARKING",
-            "name": "P2",
+            "name": "P11-20",
             "floor_index": -1,
             "geometry": {
-              "x": -45.92630063948471,
-              "y": 25.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_3_f-1",
-            "type": "PARKING",
-            "name": "P3",
-            "floor_index": -1,
-            "geometry": {
-              "x": -7.676300639484708,
-              "y": -25.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_4_f-1",
-            "type": "PARKING",
-            "name": "P4",
-            "floor_index": -1,
-            "geometry": {
-              "x": 5.073699360515292,
-              "y": -25.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_5_f-1",
-            "type": "PARKING",
-            "name": "P5",
-            "floor_index": -1,
-            "geometry": {
-              "x": -7.676300639484708,
-              "y": -50.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_6_f-1",
-            "type": "PARKING",
-            "name": "P6",
-            "floor_index": -1,
-            "geometry": {
-              "x": 5.073699360515292,
-              "y": -50.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_7_f-1",
-            "type": "PARKING",
-            "name": "P7",
-            "floor_index": -1,
-            "geometry": {
-              "x": 17.823699360515292,
-              "y": -33.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_8_f-1",
-            "type": "PARKING",
-            "name": "P8",
-            "floor_index": -1,
-            "geometry": {
-              "x": 30.573699360515292,
-              "y": -42.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_9_f-1",
-            "type": "PARKING",
-            "name": "P9",
-            "floor_index": -1,
-            "geometry": {
-              "x": 43.32369936051529,
-              "y": -33.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_10_f-1",
-            "type": "PARKING",
-            "name": "P10",
-            "floor_index": -1,
-            "geometry": {
-              "x": 17.823699360515292,
+              "x": 32.57369936051529,
               "y": -59.08232369486271,
-              "width": 8.5,
-              "height": 17,
+              "width": 45,
+              "height": 34,
               "rotation": 0
             },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_11_f-1",
-            "type": "PARKING",
-            "name": "P11",
-            "floor_index": -1,
-            "geometry": {
-              "x": 43.32369936051529,
-              "y": -59.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_12_f-1",
-            "type": "PARKING",
-            "name": "P12",
-            "floor_index": -1,
-            "geometry": {
-              "x": 56.07369936051529,
-              "y": -59.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_13_f-1",
-            "type": "PARKING",
-            "name": "P13",
-            "floor_index": -1,
-            "geometry": {
-              "x": 30.573699360515292,
-              "y": -67.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_14_f-1",
-            "type": "PARKING",
-            "name": "P14",
-            "floor_index": -1,
-            "geometry": {
-              "x": 17.823699360515292,
-              "y": 34.41767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_15_f-1",
-            "type": "PARKING",
-            "name": "P15",
-            "floor_index": -1,
-            "geometry": {
-              "x": 60.32369936051529,
-              "y": -84.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_16_f-1",
-            "type": "PARKING",
-            "name": "P16",
-            "floor_index": -1,
-            "geometry": {
-              "x": 47.57369936051529,
-              "y": -84.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_17_f-1",
-            "type": "PARKING",
-            "name": "P17",
-            "floor_index": -1,
-            "geometry": {
-              "x": 34.82369936051529,
-              "y": -93.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_18_f-1",
-            "type": "PARKING",
-            "name": "P18",
-            "floor_index": -1,
-            "geometry": {
-              "x": 5.073699360515292,
-              "y": 25.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_19_f-1",
-            "type": "PARKING",
-            "name": "P19",
-            "floor_index": -1,
-            "geometry": {
-              "x": 17.823699360515292,
-              "y": -84.58232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_20_f-1",
-            "type": "PARKING",
-            "name": "P20",
-            "floor_index": -1,
-            "geometry": {
-              "x": 5.073699360515292,
-              "y": -76.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_21_f-1",
-            "type": "PARKING",
-            "name": "P21",
-            "floor_index": -1,
-            "geometry": {
-              "x": 13.573699360515292,
-              "y": 59.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_22_f-1",
-            "type": "PARKING",
-            "name": "P22",
-            "floor_index": -1,
-            "geometry": {
-              "x": 22.073699360515292,
-              "y": -110.08232369486271,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_23_f-1",
-            "type": "PARKING",
-            "name": "P23",
-            "floor_index": -1,
-            "geometry": {
-              "x": -7.676300639484708,
-              "y": 25.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_24_f-1",
-            "type": "PARKING",
-            "name": "P24",
-            "floor_index": -1,
-            "geometry": {
-              "x": 0.8236993605152918,
-              "y": 51.41767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_25_f-1",
-            "type": "PARKING",
-            "name": "P25",
-            "floor_index": -1,
-            "geometry": {
-              "x": -20.426300639484708,
-              "y": 25.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_26_f-1",
-            "type": "PARKING",
-            "name": "P26",
-            "floor_index": -1,
-            "geometry": {
-              "x": -11.926300639484708,
-              "y": 51.41767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_27_f-1",
-            "type": "PARKING",
-            "name": "P27",
-            "floor_index": -1,
-            "geometry": {
-              "x": 0.8236993605152918,
-              "y": 76.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_28_f-1",
-            "type": "PARKING",
-            "name": "P28",
-            "floor_index": -1,
-            "geometry": {
-              "x": -11.926300639484708,
-              "y": 76.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_29_f-1",
-            "type": "PARKING",
-            "name": "P29",
-            "floor_index": -1,
-            "geometry": {
-              "x": -24.676300639484708,
-              "y": 51.41767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_30_f-1",
-            "type": "PARKING",
-            "name": "P30",
-            "floor_index": -1,
-            "geometry": {
-              "x": -33.17630063948471,
-              "y": 25.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_31_f-1",
-            "type": "PARKING",
-            "name": "P31",
-            "floor_index": -1,
-            "geometry": {
-              "x": -54.42630063948471,
-              "y": 51.41767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_32_f-1",
-            "type": "PARKING",
-            "name": "P32",
-            "floor_index": -1,
-            "geometry": {
-              "x": -41.67630063948471,
-              "y": 51.41767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_33_f-1",
-            "type": "PARKING",
-            "name": "P33",
-            "floor_index": -1,
-            "geometry": {
-              "x": -45.92630063948471,
-              "y": 76.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_34_f-1",
-            "type": "PARKING",
-            "name": "P34",
-            "floor_index": -1,
-            "geometry": {
-              "x": -33.17630063948471,
-              "y": 76.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
-            "membership": 1,
-            "area_deviation": "+0.0%",
-            "is_vertical": false
-          },
-          {
-            "id": "parking_35_f-1",
-            "type": "PARKING",
-            "name": "P35",
-            "floor_index": -1,
-            "geometry": {
-              "x": -58.67630063948471,
-              "y": 76.91767630513729,
-              "width": 8.5,
-              "height": 17,
-              "rotation": 0
-            },
-            "target_area_sf": 144.5,
-            "actual_area_sf": 144.5,
+            "target_area_sf": 1530,
+            "actual_area_sf": 1530,
             "membership": 1,
             "area_deviation": "+0.0%",
             "is_vertical": false
@@ -1279,8 +685,8 @@
             "name": "Trash",
             "floor_index": 1,
             "geometry": {
-              "x": 13,
-              "y": -13.5,
+              "x": 15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -1297,8 +703,8 @@
             "name": "Mech",
             "floor_index": 1,
             "geometry": {
-              "x": 13,
-              "y": 13.5,
+              "x": 15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -1315,8 +721,8 @@
             "name": "Stor",
             "floor_index": 1,
             "geometry": {
-              "x": -13,
-              "y": -13.5,
+              "x": -15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -1333,8 +739,8 @@
             "name": "Elec",
             "floor_index": 1,
             "geometry": {
-              "x": -13,
-              "y": 13.5,
+              "x": -15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -1357,27 +763,58 @@
                   -99.59275867086598
                 ],
                 [
-                  63.63055981651017,
-                  -58.0896007953306
+                  66.53367377779382,
+                  -81.14691072618359
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  16.398325748296287,
+                  -20.000000000000007
                 ],
                 [
-                  15.5,
-                  -16
-                ],
-                [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 1118.8187078597132,
+            "actual_area_sf": 493.69571024480126,
             "membership": 1,
-            "area_deviation": "+88.7%",
+            "area_deviation": "-16.7%",
+            "is_vertical": false
+          },
+          {
+            "id": "unit_1br_1_f1",
+            "type": "DWELLING_UNIT",
+            "name": "1 Bedroom + 1 Bath (Typical)",
+            "floor_index": 1,
+            "geometry": {
+              "vertices": [
+                [
+                  66.53367377779382,
+                  -81.14691072618359
+                ],
+                [
+                  63.63055981651017,
+                  -58.0896007953306
+                ],
+                [
+                  19.5,
+                  -17.801936974551552
+                ],
+                [
+                  19.5,
+                  -20
+                ],
+                [
+                  16.398325748296287,
+                  -20.000000000000007
+                ]
+              ]
+            },
+            "target_area_sf": 732,
+            "actual_area_sf": 596.8065468291594,
+            "membership": 1,
+            "area_deviation": "-18.5%",
             "is_vertical": false
           },
           {
@@ -1400,19 +837,19 @@
                   -28.69232562602548
                 ],
                 [
-                  15.5,
-                  -8.899646776307758
+                  19.5,
+                  -11.196329815354922
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  19.5,
+                  -17.801936974551552
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 509.42141866566027,
+            "actual_area_sf": 485.70898270956974,
             "membership": 1,
-            "area_deviation": "-55.7%",
+            "area_deviation": "-57.8%",
             "is_vertical": false
           },
           {
@@ -1427,37 +864,6 @@
                   -28.69232562602548
                 ],
                 [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
-                  15.5,
-                  0.20992947928781203
-                ],
-                [
-                  15.5,
-                  -8.899646776307758
-                ]
-              ]
-            },
-            "target_area_sf": 1039,
-            "actual_area_sf": 451.73358881090724,
-            "membership": 1,
-            "area_deviation": "-56.5%",
-            "is_vertical": false
-          },
-          {
-            "id": "unit_2br_4_f1",
-            "type": "DWELLING_UNIT",
-            "name": "2 Bedroom + 2 Bath + Powder",
-            "floor_index": 1,
-            "geometry": {
-              "vertices": [
-                [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
                   27.15760515044236,
                   17.523594128543632
                 ],
@@ -1470,23 +876,23 @@
                   61.60214097040094
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ],
                 [
-                  15.5,
-                  16
+                  19.5,
+                  20
                 ],
                 [
-                  15.5,
-                  0.20992947928781203
+                  19.5,
+                  -11.196329815354922
                 ]
               ]
             },
-            "target_area_sf": 1261,
-            "actual_area_sf": 1007.2891054636234,
+            "target_area_sf": 1039,
+            "actual_area_sf": 1302.8385429065004,
             "membership": 1,
-            "area_deviation": "-20.1%",
+            "area_deviation": "+25.4%",
             "is_vertical": false
           },
           {
@@ -1505,19 +911,19 @@
                   114.82349187131177
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 1262.4113470833283,
+            "actual_area_sf": 1235.7460559561787,
             "membership": 1,
-            "area_deviation": "-14.3%",
+            "area_deviation": "-16.1%",
             "is_vertical": false
           },
           {
@@ -1540,19 +946,19 @@
                   110.83076151658378
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 1078.0103661113258,
+            "actual_area_sf": 1066.0722393239027,
             "membership": 1,
-            "area_deviation": "+47.3%",
+            "area_deviation": "+45.6%",
             "is_vertical": false
           },
           {
@@ -1571,19 +977,19 @@
                   96.01711854572594
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 1706.7563327243313,
+            "actual_area_sf": 1683.0916701152344,
             "membership": 1,
-            "area_deviation": "+48.4%",
+            "area_deviation": "+46.4%",
             "is_vertical": false
           },
           {
@@ -1606,23 +1012,23 @@
                   53.01905892440202
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ],
                 [
-                  -15.5,
-                  16
+                  -19.5,
+                  20
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 2391.684171366065,
+            "actual_area_sf": 2340.9698884469312,
             "membership": 1,
-            "area_deviation": "+130.2%",
+            "area_deviation": "+125.3%",
             "is_vertical": false
           },
           {
@@ -1641,19 +1047,19 @@
                   17.191683547284974
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ]
               ]
             },
             "target_area_sf": 1417,
-            "actual_area_sf": 713.1001693106,
+            "actual_area_sf": 681.7647836425156,
             "membership": 1,
-            "area_deviation": "-49.7%",
+            "area_deviation": "-51.9%",
             "is_vertical": false
           },
           {
@@ -1672,19 +1078,19 @@
                   -18.63569182983207
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 660.6663904470612,
+            "actual_area_sf": 598.7764614245738,
             "membership": 1,
-            "area_deviation": "-55.1%",
+            "area_deviation": "-59.3%",
             "is_vertical": false
           },
           {
@@ -1703,23 +1109,23 @@
                   -35.4956331837695
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ],
                 [
-                  -15.5,
-                  -16
+                  -19.5,
+                  -20
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 273.32727272171564,
+            "actual_area_sf": 222.90373438886948,
             "membership": 1,
-            "area_deviation": "-53.9%",
+            "area_deviation": "-62.4%",
             "is_vertical": false
           },
           {
@@ -1738,19 +1144,19 @@
                   -56.57055987619131
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 393.5914843485857,
+            "actual_area_sf": 361.24164413915815,
             "membership": 1,
-            "area_deviation": "-46.2%",
+            "area_deviation": "-50.7%",
             "is_vertical": false
           },
           {
@@ -1769,19 +1175,19 @@
                   -86.07545724558182
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 598.3405484356867,
+            "actual_area_sf": 579.6640367130508,
             "membership": 1,
-            "area_deviation": "-48.0%",
+            "area_deviation": "-49.6%",
             "is_vertical": false
           },
           {
@@ -1800,19 +1206,19 @@
                   -115.5803546149723
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 615.2922508342929,
+            "actual_area_sf": 606.1510717108738,
             "membership": 1,
-            "area_deviation": "-40.8%",
+            "area_deviation": "-41.7%",
             "is_vertical": false
           },
           {
@@ -1839,19 +1245,19 @@
                   -99.59275867086598
                 ],
                 [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ]
               ]
             },
             "target_area_sf": 1261,
-            "actual_area_sf": 3735.9609131661887,
+            "actual_area_sf": 3692.9726987977674,
             "membership": 1,
-            "area_deviation": "+196.3%",
+            "area_deviation": "+192.9%",
             "is_vertical": false
           }
         ]
@@ -1969,8 +1375,8 @@
             "name": "Trash",
             "floor_index": 2,
             "geometry": {
-              "x": 13,
-              "y": -13.5,
+              "x": 15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -1987,8 +1393,8 @@
             "name": "Mech",
             "floor_index": 2,
             "geometry": {
-              "x": 13,
-              "y": 13.5,
+              "x": 15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -2005,8 +1411,8 @@
             "name": "Stor",
             "floor_index": 2,
             "geometry": {
-              "x": -13,
-              "y": -13.5,
+              "x": -15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -2023,8 +1429,8 @@
             "name": "Elec",
             "floor_index": 2,
             "geometry": {
-              "x": -13,
-              "y": 13.5,
+              "x": -15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -2047,27 +1453,58 @@
                   -99.59275867086598
                 ],
                 [
-                  63.63055981651017,
-                  -58.0896007953306
+                  66.53367377779382,
+                  -81.14691072618359
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  16.398325748296287,
+                  -20.000000000000007
                 ],
                 [
-                  15.5,
-                  -16
-                ],
-                [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 1118.8187078597132,
+            "actual_area_sf": 493.69571024480126,
             "membership": 1,
-            "area_deviation": "+88.7%",
+            "area_deviation": "-16.7%",
+            "is_vertical": false
+          },
+          {
+            "id": "unit_1br_1_f2",
+            "type": "DWELLING_UNIT",
+            "name": "1 Bedroom + 1 Bath (Typical)",
+            "floor_index": 2,
+            "geometry": {
+              "vertices": [
+                [
+                  66.53367377779382,
+                  -81.14691072618359
+                ],
+                [
+                  63.63055981651017,
+                  -58.0896007953306
+                ],
+                [
+                  19.5,
+                  -17.801936974551552
+                ],
+                [
+                  19.5,
+                  -20
+                ],
+                [
+                  16.398325748296287,
+                  -20.000000000000007
+                ]
+              ]
+            },
+            "target_area_sf": 732,
+            "actual_area_sf": 596.8065468291594,
+            "membership": 1,
+            "area_deviation": "-18.5%",
             "is_vertical": false
           },
           {
@@ -2090,19 +1527,19 @@
                   -28.69232562602548
                 ],
                 [
-                  15.5,
-                  -8.899646776307758
+                  19.5,
+                  -11.196329815354922
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  19.5,
+                  -17.801936974551552
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 509.42141866566027,
+            "actual_area_sf": 485.70898270956974,
             "membership": 1,
-            "area_deviation": "-55.7%",
+            "area_deviation": "-57.8%",
             "is_vertical": false
           },
           {
@@ -2117,37 +1554,6 @@
                   -28.69232562602548
                 ],
                 [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
-                  15.5,
-                  0.20992947928781203
-                ],
-                [
-                  15.5,
-                  -8.899646776307758
-                ]
-              ]
-            },
-            "target_area_sf": 1039,
-            "actual_area_sf": 451.73358881090724,
-            "membership": 1,
-            "area_deviation": "-56.5%",
-            "is_vertical": false
-          },
-          {
-            "id": "unit_2br_4_f2",
-            "type": "DWELLING_UNIT",
-            "name": "2 Bedroom + 2 Bath + Powder",
-            "floor_index": 2,
-            "geometry": {
-              "vertices": [
-                [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
                   27.15760515044236,
                   17.523594128543632
                 ],
@@ -2160,23 +1566,23 @@
                   61.60214097040094
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ],
                 [
-                  15.5,
-                  16
+                  19.5,
+                  20
                 ],
                 [
-                  15.5,
-                  0.20992947928781203
+                  19.5,
+                  -11.196329815354922
                 ]
               ]
             },
-            "target_area_sf": 1261,
-            "actual_area_sf": 1007.2891054636234,
+            "target_area_sf": 1039,
+            "actual_area_sf": 1302.8385429065004,
             "membership": 1,
-            "area_deviation": "-20.1%",
+            "area_deviation": "+25.4%",
             "is_vertical": false
           },
           {
@@ -2195,19 +1601,19 @@
                   114.82349187131177
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 1262.4113470833283,
+            "actual_area_sf": 1235.7460559561787,
             "membership": 1,
-            "area_deviation": "-14.3%",
+            "area_deviation": "-16.1%",
             "is_vertical": false
           },
           {
@@ -2230,19 +1636,19 @@
                   110.83076151658378
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 1078.0103661113258,
+            "actual_area_sf": 1066.0722393239027,
             "membership": 1,
-            "area_deviation": "+47.3%",
+            "area_deviation": "+45.6%",
             "is_vertical": false
           },
           {
@@ -2261,19 +1667,19 @@
                   96.01711854572594
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 1706.7563327243313,
+            "actual_area_sf": 1683.0916701152344,
             "membership": 1,
-            "area_deviation": "+48.4%",
+            "area_deviation": "+46.4%",
             "is_vertical": false
           },
           {
@@ -2296,23 +1702,23 @@
                   53.01905892440202
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ],
                 [
-                  -15.5,
-                  16
+                  -19.5,
+                  20
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 2391.684171366065,
+            "actual_area_sf": 2340.9698884469312,
             "membership": 1,
-            "area_deviation": "+130.2%",
+            "area_deviation": "+125.3%",
             "is_vertical": false
           },
           {
@@ -2331,19 +1737,19 @@
                   17.191683547284974
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ]
               ]
             },
             "target_area_sf": 1417,
-            "actual_area_sf": 713.1001693106,
+            "actual_area_sf": 681.7647836425156,
             "membership": 1,
-            "area_deviation": "-49.7%",
+            "area_deviation": "-51.9%",
             "is_vertical": false
           },
           {
@@ -2362,19 +1768,19 @@
                   -18.63569182983207
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 660.6663904470612,
+            "actual_area_sf": 598.7764614245738,
             "membership": 1,
-            "area_deviation": "-55.1%",
+            "area_deviation": "-59.3%",
             "is_vertical": false
           },
           {
@@ -2393,23 +1799,23 @@
                   -35.4956331837695
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ],
                 [
-                  -15.5,
-                  -16
+                  -19.5,
+                  -20
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 273.32727272171564,
+            "actual_area_sf": 222.90373438886948,
             "membership": 1,
-            "area_deviation": "-53.9%",
+            "area_deviation": "-62.4%",
             "is_vertical": false
           },
           {
@@ -2428,19 +1834,19 @@
                   -56.57055987619131
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 393.5914843485857,
+            "actual_area_sf": 361.24164413915815,
             "membership": 1,
-            "area_deviation": "-46.2%",
+            "area_deviation": "-50.7%",
             "is_vertical": false
           },
           {
@@ -2459,19 +1865,19 @@
                   -86.07545724558182
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 598.3405484356867,
+            "actual_area_sf": 579.6640367130508,
             "membership": 1,
-            "area_deviation": "-48.0%",
+            "area_deviation": "-49.6%",
             "is_vertical": false
           },
           {
@@ -2490,19 +1896,19 @@
                   -115.5803546149723
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 615.2922508342929,
+            "actual_area_sf": 606.1510717108738,
             "membership": 1,
-            "area_deviation": "-40.8%",
+            "area_deviation": "-41.7%",
             "is_vertical": false
           },
           {
@@ -2529,19 +1935,19 @@
                   -99.59275867086598
                 ],
                 [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ]
               ]
             },
             "target_area_sf": 1261,
-            "actual_area_sf": 3735.9609131661887,
+            "actual_area_sf": 3692.9726987977674,
             "membership": 1,
-            "area_deviation": "+196.3%",
+            "area_deviation": "+192.9%",
             "is_vertical": false
           }
         ]
@@ -2659,8 +2065,8 @@
             "name": "Trash",
             "floor_index": 3,
             "geometry": {
-              "x": 13,
-              "y": -13.5,
+              "x": 15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -2677,8 +2083,8 @@
             "name": "Mech",
             "floor_index": 3,
             "geometry": {
-              "x": 13,
-              "y": 13.5,
+              "x": 15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -2695,8 +2101,8 @@
             "name": "Stor",
             "floor_index": 3,
             "geometry": {
-              "x": -13,
-              "y": -13.5,
+              "x": -15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -2713,8 +2119,8 @@
             "name": "Elec",
             "floor_index": 3,
             "geometry": {
-              "x": -13,
-              "y": 13.5,
+              "x": -15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -2737,27 +2143,58 @@
                   -99.59275867086598
                 ],
                 [
-                  63.63055981651017,
-                  -58.0896007953306
+                  66.53367377779382,
+                  -81.14691072618359
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  16.398325748296287,
+                  -20.000000000000007
                 ],
                 [
-                  15.5,
-                  -16
-                ],
-                [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 1118.8187078597132,
+            "actual_area_sf": 493.69571024480126,
             "membership": 1,
-            "area_deviation": "+88.7%",
+            "area_deviation": "-16.7%",
+            "is_vertical": false
+          },
+          {
+            "id": "unit_1br_1_f3",
+            "type": "DWELLING_UNIT",
+            "name": "1 Bedroom + 1 Bath (Typical)",
+            "floor_index": 3,
+            "geometry": {
+              "vertices": [
+                [
+                  66.53367377779382,
+                  -81.14691072618359
+                ],
+                [
+                  63.63055981651017,
+                  -58.0896007953306
+                ],
+                [
+                  19.5,
+                  -17.801936974551552
+                ],
+                [
+                  19.5,
+                  -20
+                ],
+                [
+                  16.398325748296287,
+                  -20.000000000000007
+                ]
+              ]
+            },
+            "target_area_sf": 732,
+            "actual_area_sf": 596.8065468291594,
+            "membership": 1,
+            "area_deviation": "-18.5%",
             "is_vertical": false
           },
           {
@@ -2780,19 +2217,19 @@
                   -28.69232562602548
                 ],
                 [
-                  15.5,
-                  -8.899646776307758
+                  19.5,
+                  -11.196329815354922
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  19.5,
+                  -17.801936974551552
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 509.42141866566027,
+            "actual_area_sf": 485.70898270956974,
             "membership": 1,
-            "area_deviation": "-55.7%",
+            "area_deviation": "-57.8%",
             "is_vertical": false
           },
           {
@@ -2807,37 +2244,6 @@
                   -28.69232562602548
                 ],
                 [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
-                  15.5,
-                  0.20992947928781203
-                ],
-                [
-                  15.5,
-                  -8.899646776307758
-                ]
-              ]
-            },
-            "target_area_sf": 1039,
-            "actual_area_sf": 451.73358881090724,
-            "membership": 1,
-            "area_deviation": "-56.5%",
-            "is_vertical": false
-          },
-          {
-            "id": "unit_2br_4_f3",
-            "type": "DWELLING_UNIT",
-            "name": "2 Bedroom + 2 Bath + Powder",
-            "floor_index": 3,
-            "geometry": {
-              "vertices": [
-                [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
                   27.15760515044236,
                   17.523594128543632
                 ],
@@ -2850,23 +2256,23 @@
                   61.60214097040094
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ],
                 [
-                  15.5,
-                  16
+                  19.5,
+                  20
                 ],
                 [
-                  15.5,
-                  0.20992947928781203
+                  19.5,
+                  -11.196329815354922
                 ]
               ]
             },
-            "target_area_sf": 1261,
-            "actual_area_sf": 1007.2891054636234,
+            "target_area_sf": 1039,
+            "actual_area_sf": 1302.8385429065004,
             "membership": 1,
-            "area_deviation": "-20.1%",
+            "area_deviation": "+25.4%",
             "is_vertical": false
           },
           {
@@ -2885,19 +2291,19 @@
                   114.82349187131177
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 1262.4113470833283,
+            "actual_area_sf": 1235.7460559561787,
             "membership": 1,
-            "area_deviation": "-14.3%",
+            "area_deviation": "-16.1%",
             "is_vertical": false
           },
           {
@@ -2920,19 +2326,19 @@
                   110.83076151658378
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 1078.0103661113258,
+            "actual_area_sf": 1066.0722393239027,
             "membership": 1,
-            "area_deviation": "+47.3%",
+            "area_deviation": "+45.6%",
             "is_vertical": false
           },
           {
@@ -2951,19 +2357,19 @@
                   96.01711854572594
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 1706.7563327243313,
+            "actual_area_sf": 1683.0916701152344,
             "membership": 1,
-            "area_deviation": "+48.4%",
+            "area_deviation": "+46.4%",
             "is_vertical": false
           },
           {
@@ -2986,23 +2392,23 @@
                   53.01905892440202
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ],
                 [
-                  -15.5,
-                  16
+                  -19.5,
+                  20
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 2391.684171366065,
+            "actual_area_sf": 2340.9698884469312,
             "membership": 1,
-            "area_deviation": "+130.2%",
+            "area_deviation": "+125.3%",
             "is_vertical": false
           },
           {
@@ -3021,19 +2427,19 @@
                   17.191683547284974
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ]
               ]
             },
             "target_area_sf": 1417,
-            "actual_area_sf": 713.1001693106,
+            "actual_area_sf": 681.7647836425156,
             "membership": 1,
-            "area_deviation": "-49.7%",
+            "area_deviation": "-51.9%",
             "is_vertical": false
           },
           {
@@ -3052,19 +2458,19 @@
                   -18.63569182983207
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 660.6663904470612,
+            "actual_area_sf": 598.7764614245738,
             "membership": 1,
-            "area_deviation": "-55.1%",
+            "area_deviation": "-59.3%",
             "is_vertical": false
           },
           {
@@ -3083,23 +2489,23 @@
                   -35.4956331837695
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ],
                 [
-                  -15.5,
-                  -16
+                  -19.5,
+                  -20
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 273.32727272171564,
+            "actual_area_sf": 222.90373438886948,
             "membership": 1,
-            "area_deviation": "-53.9%",
+            "area_deviation": "-62.4%",
             "is_vertical": false
           },
           {
@@ -3118,19 +2524,19 @@
                   -56.57055987619131
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 393.5914843485857,
+            "actual_area_sf": 361.24164413915815,
             "membership": 1,
-            "area_deviation": "-46.2%",
+            "area_deviation": "-50.7%",
             "is_vertical": false
           },
           {
@@ -3149,19 +2555,19 @@
                   -86.07545724558182
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 598.3405484356867,
+            "actual_area_sf": 579.6640367130508,
             "membership": 1,
-            "area_deviation": "-48.0%",
+            "area_deviation": "-49.6%",
             "is_vertical": false
           },
           {
@@ -3180,19 +2586,19 @@
                   -115.5803546149723
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 615.2922508342929,
+            "actual_area_sf": 606.1510717108738,
             "membership": 1,
-            "area_deviation": "-40.8%",
+            "area_deviation": "-41.7%",
             "is_vertical": false
           },
           {
@@ -3219,19 +2625,19 @@
                   -99.59275867086598
                 ],
                 [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ]
               ]
             },
             "target_area_sf": 1261,
-            "actual_area_sf": 3735.9609131661887,
+            "actual_area_sf": 3692.9726987977674,
             "membership": 1,
-            "area_deviation": "+196.3%",
+            "area_deviation": "+192.9%",
             "is_vertical": false
           }
         ]
@@ -3349,8 +2755,8 @@
             "name": "Trash",
             "floor_index": 4,
             "geometry": {
-              "x": 13,
-              "y": -13.5,
+              "x": 15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -3367,8 +2773,8 @@
             "name": "Mech",
             "floor_index": 4,
             "geometry": {
-              "x": 13,
-              "y": 13.5,
+              "x": 15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -3385,8 +2791,8 @@
             "name": "Stor",
             "floor_index": 4,
             "geometry": {
-              "x": -13,
-              "y": -13.5,
+              "x": -15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -3403,8 +2809,8 @@
             "name": "Elec",
             "floor_index": 4,
             "geometry": {
-              "x": -13,
-              "y": 13.5,
+              "x": -15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -3427,27 +2833,58 @@
                   -99.59275867086598
                 ],
                 [
-                  63.63055981651017,
-                  -58.0896007953306
+                  66.53367377779382,
+                  -81.14691072618359
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  16.398325748296287,
+                  -20.000000000000007
                 ],
                 [
-                  15.5,
-                  -16
-                ],
-                [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 1118.8187078597132,
+            "actual_area_sf": 493.69571024480126,
             "membership": 1,
-            "area_deviation": "+88.7%",
+            "area_deviation": "-16.7%",
+            "is_vertical": false
+          },
+          {
+            "id": "unit_1br_1_f4",
+            "type": "DWELLING_UNIT",
+            "name": "1 Bedroom + 1 Bath (Typical)",
+            "floor_index": 4,
+            "geometry": {
+              "vertices": [
+                [
+                  66.53367377779382,
+                  -81.14691072618359
+                ],
+                [
+                  63.63055981651017,
+                  -58.0896007953306
+                ],
+                [
+                  19.5,
+                  -17.801936974551552
+                ],
+                [
+                  19.5,
+                  -20
+                ],
+                [
+                  16.398325748296287,
+                  -20.000000000000007
+                ]
+              ]
+            },
+            "target_area_sf": 732,
+            "actual_area_sf": 596.8065468291594,
+            "membership": 1,
+            "area_deviation": "-18.5%",
             "is_vertical": false
           },
           {
@@ -3470,19 +2907,19 @@
                   -28.69232562602548
                 ],
                 [
-                  15.5,
-                  -8.899646776307758
+                  19.5,
+                  -11.196329815354922
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  19.5,
+                  -17.801936974551552
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 509.42141866566027,
+            "actual_area_sf": 485.70898270956974,
             "membership": 1,
-            "area_deviation": "-55.7%",
+            "area_deviation": "-57.8%",
             "is_vertical": false
           },
           {
@@ -3497,37 +2934,6 @@
                   -28.69232562602548
                 ],
                 [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
-                  15.5,
-                  0.20992947928781203
-                ],
-                [
-                  15.5,
-                  -8.899646776307758
-                ]
-              ]
-            },
-            "target_area_sf": 1039,
-            "actual_area_sf": 451.73358881090724,
-            "membership": 1,
-            "area_deviation": "-56.5%",
-            "is_vertical": false
-          },
-          {
-            "id": "unit_2br_4_f4",
-            "type": "DWELLING_UNIT",
-            "name": "2 Bedroom + 2 Bath + Powder",
-            "floor_index": 4,
-            "geometry": {
-              "vertices": [
-                [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
                   27.15760515044236,
                   17.523594128543632
                 ],
@@ -3540,23 +2946,23 @@
                   61.60214097040094
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ],
                 [
-                  15.5,
-                  16
+                  19.5,
+                  20
                 ],
                 [
-                  15.5,
-                  0.20992947928781203
+                  19.5,
+                  -11.196329815354922
                 ]
               ]
             },
-            "target_area_sf": 1261,
-            "actual_area_sf": 1007.2891054636234,
+            "target_area_sf": 1039,
+            "actual_area_sf": 1302.8385429065004,
             "membership": 1,
-            "area_deviation": "-20.1%",
+            "area_deviation": "+25.4%",
             "is_vertical": false
           },
           {
@@ -3575,19 +2981,19 @@
                   114.82349187131177
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 1262.4113470833283,
+            "actual_area_sf": 1235.7460559561787,
             "membership": 1,
-            "area_deviation": "-14.3%",
+            "area_deviation": "-16.1%",
             "is_vertical": false
           },
           {
@@ -3610,19 +3016,19 @@
                   110.83076151658378
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 1078.0103661113258,
+            "actual_area_sf": 1066.0722393239027,
             "membership": 1,
-            "area_deviation": "+47.3%",
+            "area_deviation": "+45.6%",
             "is_vertical": false
           },
           {
@@ -3641,19 +3047,19 @@
                   96.01711854572594
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 1706.7563327243313,
+            "actual_area_sf": 1683.0916701152344,
             "membership": 1,
-            "area_deviation": "+48.4%",
+            "area_deviation": "+46.4%",
             "is_vertical": false
           },
           {
@@ -3676,23 +3082,23 @@
                   53.01905892440202
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ],
                 [
-                  -15.5,
-                  16
+                  -19.5,
+                  20
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 2391.684171366065,
+            "actual_area_sf": 2340.9698884469312,
             "membership": 1,
-            "area_deviation": "+130.2%",
+            "area_deviation": "+125.3%",
             "is_vertical": false
           },
           {
@@ -3711,19 +3117,19 @@
                   17.191683547284974
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ]
               ]
             },
             "target_area_sf": 1417,
-            "actual_area_sf": 713.1001693106,
+            "actual_area_sf": 681.7647836425156,
             "membership": 1,
-            "area_deviation": "-49.7%",
+            "area_deviation": "-51.9%",
             "is_vertical": false
           },
           {
@@ -3742,19 +3148,19 @@
                   -18.63569182983207
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 660.6663904470612,
+            "actual_area_sf": 598.7764614245738,
             "membership": 1,
-            "area_deviation": "-55.1%",
+            "area_deviation": "-59.3%",
             "is_vertical": false
           },
           {
@@ -3773,23 +3179,23 @@
                   -35.4956331837695
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ],
                 [
-                  -15.5,
-                  -16
+                  -19.5,
+                  -20
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 273.32727272171564,
+            "actual_area_sf": 222.90373438886948,
             "membership": 1,
-            "area_deviation": "-53.9%",
+            "area_deviation": "-62.4%",
             "is_vertical": false
           },
           {
@@ -3808,19 +3214,19 @@
                   -56.57055987619131
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 393.5914843485857,
+            "actual_area_sf": 361.24164413915815,
             "membership": 1,
-            "area_deviation": "-46.2%",
+            "area_deviation": "-50.7%",
             "is_vertical": false
           },
           {
@@ -3839,19 +3245,19 @@
                   -86.07545724558182
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 598.3405484356867,
+            "actual_area_sf": 579.6640367130508,
             "membership": 1,
-            "area_deviation": "-48.0%",
+            "area_deviation": "-49.6%",
             "is_vertical": false
           },
           {
@@ -3870,19 +3276,19 @@
                   -115.5803546149723
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 615.2922508342929,
+            "actual_area_sf": 606.1510717108738,
             "membership": 1,
-            "area_deviation": "-40.8%",
+            "area_deviation": "-41.7%",
             "is_vertical": false
           },
           {
@@ -3909,19 +3315,19 @@
                   -99.59275867086598
                 ],
                 [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ]
               ]
             },
             "target_area_sf": 1261,
-            "actual_area_sf": 3735.9609131661887,
+            "actual_area_sf": 3692.9726987977674,
             "membership": 1,
-            "area_deviation": "+196.3%",
+            "area_deviation": "+192.9%",
             "is_vertical": false
           }
         ]
@@ -4039,8 +3445,8 @@
             "name": "Trash",
             "floor_index": 5,
             "geometry": {
-              "x": 13,
-              "y": -13.5,
+              "x": 15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4057,8 +3463,8 @@
             "name": "Mech",
             "floor_index": 5,
             "geometry": {
-              "x": 13,
-              "y": 13.5,
+              "x": 15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4075,8 +3481,8 @@
             "name": "Stor",
             "floor_index": 5,
             "geometry": {
-              "x": -13,
-              "y": -13.5,
+              "x": -15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4093,8 +3499,8 @@
             "name": "Elec",
             "floor_index": 5,
             "geometry": {
-              "x": -13,
-              "y": 13.5,
+              "x": -15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4117,27 +3523,58 @@
                   -99.59275867086598
                 ],
                 [
-                  63.63055981651017,
-                  -58.0896007953306
+                  66.53367377779382,
+                  -81.14691072618359
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  16.398325748296287,
+                  -20.000000000000007
                 ],
                 [
-                  15.5,
-                  -16
-                ],
-                [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 1118.8187078597132,
+            "actual_area_sf": 493.69571024480126,
             "membership": 1,
-            "area_deviation": "+88.7%",
+            "area_deviation": "-16.7%",
+            "is_vertical": false
+          },
+          {
+            "id": "unit_1br_1_f5",
+            "type": "DWELLING_UNIT",
+            "name": "1 Bedroom + 1 Bath (Typical)",
+            "floor_index": 5,
+            "geometry": {
+              "vertices": [
+                [
+                  66.53367377779382,
+                  -81.14691072618359
+                ],
+                [
+                  63.63055981651017,
+                  -58.0896007953306
+                ],
+                [
+                  19.5,
+                  -17.801936974551552
+                ],
+                [
+                  19.5,
+                  -20
+                ],
+                [
+                  16.398325748296287,
+                  -20.000000000000007
+                ]
+              ]
+            },
+            "target_area_sf": 732,
+            "actual_area_sf": 596.8065468291594,
+            "membership": 1,
+            "area_deviation": "-18.5%",
             "is_vertical": false
           },
           {
@@ -4160,19 +3597,19 @@
                   -28.69232562602548
                 ],
                 [
-                  15.5,
-                  -8.899646776307758
+                  19.5,
+                  -11.196329815354922
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  19.5,
+                  -17.801936974551552
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 509.42141866566027,
+            "actual_area_sf": 485.70898270956974,
             "membership": 1,
-            "area_deviation": "-55.7%",
+            "area_deviation": "-57.8%",
             "is_vertical": false
           },
           {
@@ -4187,37 +3624,6 @@
                   -28.69232562602548
                 ],
                 [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
-                  15.5,
-                  0.20992947928781203
-                ],
-                [
-                  15.5,
-                  -8.899646776307758
-                ]
-              ]
-            },
-            "target_area_sf": 1039,
-            "actual_area_sf": 451.73358881090724,
-            "membership": 1,
-            "area_deviation": "-56.5%",
-            "is_vertical": false
-          },
-          {
-            "id": "unit_2br_4_f5",
-            "type": "DWELLING_UNIT",
-            "name": "2 Bedroom + 2 Bath + Powder",
-            "floor_index": 5,
-            "geometry": {
-              "vertices": [
-                [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
                   27.15760515044236,
                   17.523594128543632
                 ],
@@ -4230,23 +3636,23 @@
                   61.60214097040094
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ],
                 [
-                  15.5,
-                  16
+                  19.5,
+                  20
                 ],
                 [
-                  15.5,
-                  0.20992947928781203
+                  19.5,
+                  -11.196329815354922
                 ]
               ]
             },
-            "target_area_sf": 1261,
-            "actual_area_sf": 1007.2891054636234,
+            "target_area_sf": 1039,
+            "actual_area_sf": 1302.8385429065004,
             "membership": 1,
-            "area_deviation": "-20.1%",
+            "area_deviation": "+25.4%",
             "is_vertical": false
           },
           {
@@ -4265,19 +3671,19 @@
                   114.82349187131177
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 1262.4113470833283,
+            "actual_area_sf": 1235.7460559561787,
             "membership": 1,
-            "area_deviation": "-14.3%",
+            "area_deviation": "-16.1%",
             "is_vertical": false
           },
           {
@@ -4300,19 +3706,19 @@
                   110.83076151658378
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 1078.0103661113258,
+            "actual_area_sf": 1066.0722393239027,
             "membership": 1,
-            "area_deviation": "+47.3%",
+            "area_deviation": "+45.6%",
             "is_vertical": false
           },
           {
@@ -4331,19 +3737,19 @@
                   96.01711854572594
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 1706.7563327243313,
+            "actual_area_sf": 1683.0916701152344,
             "membership": 1,
-            "area_deviation": "+48.4%",
+            "area_deviation": "+46.4%",
             "is_vertical": false
           },
           {
@@ -4366,23 +3772,23 @@
                   53.01905892440202
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ],
                 [
-                  -15.5,
-                  16
+                  -19.5,
+                  20
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 2391.684171366065,
+            "actual_area_sf": 2340.9698884469312,
             "membership": 1,
-            "area_deviation": "+130.2%",
+            "area_deviation": "+125.3%",
             "is_vertical": false
           },
           {
@@ -4401,19 +3807,19 @@
                   17.191683547284974
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ]
               ]
             },
             "target_area_sf": 1417,
-            "actual_area_sf": 713.1001693106,
+            "actual_area_sf": 681.7647836425156,
             "membership": 1,
-            "area_deviation": "-49.7%",
+            "area_deviation": "-51.9%",
             "is_vertical": false
           },
           {
@@ -4432,19 +3838,19 @@
                   -18.63569182983207
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 660.6663904470612,
+            "actual_area_sf": 598.7764614245738,
             "membership": 1,
-            "area_deviation": "-55.1%",
+            "area_deviation": "-59.3%",
             "is_vertical": false
           },
           {
@@ -4463,23 +3869,23 @@
                   -35.4956331837695
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ],
                 [
-                  -15.5,
-                  -16
+                  -19.5,
+                  -20
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 273.32727272171564,
+            "actual_area_sf": 222.90373438886948,
             "membership": 1,
-            "area_deviation": "-53.9%",
+            "area_deviation": "-62.4%",
             "is_vertical": false
           },
           {
@@ -4498,19 +3904,19 @@
                   -56.57055987619131
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 393.5914843485857,
+            "actual_area_sf": 361.24164413915815,
             "membership": 1,
-            "area_deviation": "-46.2%",
+            "area_deviation": "-50.7%",
             "is_vertical": false
           },
           {
@@ -4529,19 +3935,19 @@
                   -86.07545724558182
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 598.3405484356867,
+            "actual_area_sf": 579.6640367130508,
             "membership": 1,
-            "area_deviation": "-48.0%",
+            "area_deviation": "-49.6%",
             "is_vertical": false
           },
           {
@@ -4560,19 +3966,19 @@
                   -115.5803546149723
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 615.2922508342929,
+            "actual_area_sf": 606.1510717108738,
             "membership": 1,
-            "area_deviation": "-40.8%",
+            "area_deviation": "-41.7%",
             "is_vertical": false
           },
           {
@@ -4599,19 +4005,19 @@
                   -99.59275867086598
                 ],
                 [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ]
               ]
             },
             "target_area_sf": 1261,
-            "actual_area_sf": 3735.9609131661887,
+            "actual_area_sf": 3692.9726987977674,
             "membership": 1,
-            "area_deviation": "+196.3%",
+            "area_deviation": "+192.9%",
             "is_vertical": false
           }
         ]
@@ -4729,8 +4135,8 @@
             "name": "Trash",
             "floor_index": 6,
             "geometry": {
-              "x": 13,
-              "y": -13.5,
+              "x": 15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4747,8 +4153,8 @@
             "name": "Mech",
             "floor_index": 6,
             "geometry": {
-              "x": 13,
-              "y": 13.5,
+              "x": 15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4765,8 +4171,8 @@
             "name": "Stor",
             "floor_index": 6,
             "geometry": {
-              "x": -13,
-              "y": -13.5,
+              "x": -15,
+              "y": -15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4783,8 +4189,8 @@
             "name": "Elec",
             "floor_index": 6,
             "geometry": {
-              "x": -13,
-              "y": 13.5,
+              "x": -15,
+              "y": 15.5,
               "width": 5,
               "height": 5,
               "rotation": 0
@@ -4807,27 +4213,58 @@
                   -99.59275867086598
                 ],
                 [
-                  63.63055981651017,
-                  -58.0896007953306
+                  66.53367377779382,
+                  -81.14691072618359
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  16.398325748296287,
+                  -20.000000000000007
                 ],
                 [
-                  15.5,
-                  -16
-                ],
-                [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 1118.8187078597132,
+            "actual_area_sf": 493.69571024480126,
             "membership": 1,
-            "area_deviation": "+88.7%",
+            "area_deviation": "-16.7%",
+            "is_vertical": false
+          },
+          {
+            "id": "unit_1br_1_f6",
+            "type": "DWELLING_UNIT",
+            "name": "1 Bedroom + 1 Bath (Typical)",
+            "floor_index": 6,
+            "geometry": {
+              "vertices": [
+                [
+                  66.53367377779382,
+                  -81.14691072618359
+                ],
+                [
+                  63.63055981651017,
+                  -58.0896007953306
+                ],
+                [
+                  19.5,
+                  -17.801936974551552
+                ],
+                [
+                  19.5,
+                  -20
+                ],
+                [
+                  16.398325748296287,
+                  -20.000000000000007
+                ]
+              ]
+            },
+            "target_area_sf": 732,
+            "actual_area_sf": 596.8065468291594,
+            "membership": 1,
+            "area_deviation": "-18.5%",
             "is_vertical": false
           },
           {
@@ -4850,19 +4287,19 @@
                   -28.69232562602548
                 ],
                 [
-                  15.5,
-                  -8.899646776307758
+                  19.5,
+                  -11.196329815354922
                 ],
                 [
-                  15.5,
-                  -14.150257595156361
+                  19.5,
+                  -17.801936974551552
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 509.42141866566027,
+            "actual_area_sf": 485.70898270956974,
             "membership": 1,
-            "area_deviation": "-55.7%",
+            "area_deviation": "-57.8%",
             "is_vertical": false
           },
           {
@@ -4877,37 +4314,6 @@
                   -28.69232562602548
                 ],
                 [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
-                  15.5,
-                  0.20992947928781203
-                ],
-                [
-                  15.5,
-                  -8.899646776307758
-                ]
-              ]
-            },
-            "target_area_sf": 1039,
-            "actual_area_sf": 451.73358881090724,
-            "membership": 1,
-            "area_deviation": "-56.5%",
-            "is_vertical": false
-          },
-          {
-            "id": "unit_2br_4_f6",
-            "type": "DWELLING_UNIT",
-            "name": "2 Bedroom + 2 Bath + Powder",
-            "floor_index": 6,
-            "geometry": {
-              "vertices": [
-                [
-                  35.5701864261806,
-                  0.4817568202979672
-                ],
-                [
                   27.15760515044236,
                   17.523594128543632
                 ],
@@ -4920,23 +4326,23 @@
                   61.60214097040094
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ],
                 [
-                  15.5,
-                  16
+                  19.5,
+                  20
                 ],
                 [
-                  15.5,
-                  0.20992947928781203
+                  19.5,
+                  -11.196329815354922
                 ]
               ]
             },
-            "target_area_sf": 1261,
-            "actual_area_sf": 1007.2891054636234,
+            "target_area_sf": 1039,
+            "actual_area_sf": 1302.8385429065004,
             "membership": 1,
-            "area_deviation": "-20.1%",
+            "area_deviation": "+25.4%",
             "is_vertical": false
           },
           {
@@ -4955,19 +4361,19 @@
                   114.82349187131177
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ],
                 [
-                  5.779511514510013,
-                  16
+                  7.224389393137519,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 1262.4113470833283,
+            "actual_area_sf": 1235.7460559561787,
             "membership": 1,
-            "area_deviation": "-14.3%",
+            "area_deviation": "-16.1%",
             "is_vertical": false
           },
           {
@@ -4990,19 +4396,19 @@
                   110.83076151658378
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ],
                 [
-                  -0.14610873596761498,
-                  16
+                  -0.18263591995951867,
+                  20
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 1078.0103661113258,
+            "actual_area_sf": 1066.0722393239027,
             "membership": 1,
-            "area_deviation": "+47.3%",
+            "area_deviation": "+45.6%",
             "is_vertical": false
           },
           {
@@ -5021,19 +4427,19 @@
                   96.01711854572594
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ],
                 [
-                  -2.7990257998394235,
-                  16
+                  -3.4987822497992767,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 1706.7563327243313,
+            "actual_area_sf": 1683.0916701152344,
             "membership": 1,
-            "area_deviation": "+48.4%",
+            "area_deviation": "+46.4%",
             "is_vertical": false
           },
           {
@@ -5056,23 +4462,23 @@
                   53.01905892440202
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ],
                 [
-                  -15.5,
-                  16
+                  -19.5,
+                  20
                 ],
                 [
-                  -8.057839712972083,
-                  16
+                  -10.072299641215096,
+                  20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 2391.684171366065,
+            "actual_area_sf": 2340.9698884469312,
             "membership": 1,
-            "area_deviation": "+130.2%",
+            "area_deviation": "+125.3%",
             "is_vertical": false
           },
           {
@@ -5091,19 +4497,19 @@
                   17.191683547284974
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ],
                 [
-                  -15.5,
-                  12.18420421105158
+                  -19.5,
+                  15.328514975193912
                 ]
               ]
             },
             "target_area_sf": 1417,
-            "actual_area_sf": 713.1001693106,
+            "actual_area_sf": 681.7647836425156,
             "membership": 1,
-            "area_deviation": "-49.7%",
+            "area_deviation": "-51.9%",
             "is_vertical": false
           },
           {
@@ -5122,19 +4528,19 @@
                   -18.63569182983207
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ],
                 [
-                  -15.5,
-                  5.2456545274043815
+                  -19.5,
+                  6.599371824799061
                 ]
               ]
             },
             "target_area_sf": 1473,
-            "actual_area_sf": 660.6663904470612,
+            "actual_area_sf": 598.7764614245738,
             "membership": 1,
-            "area_deviation": "-55.1%",
+            "area_deviation": "-59.3%",
             "is_vertical": false
           },
           {
@@ -5153,23 +4559,23 @@
                   -35.4956331837695
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ],
                 [
-                  -15.5,
-                  -16
+                  -19.5,
+                  -20
                 ],
                 [
-                  -15.5,
-                  -8.458544041860685
+                  -19.5,
+                  -10.641394117179573
                 ]
               ]
             },
             "target_area_sf": 593,
-            "actual_area_sf": 273.32727272171564,
+            "actual_area_sf": 222.90373438886948,
             "membership": 1,
-            "area_deviation": "-53.9%",
+            "area_deviation": "-62.4%",
             "is_vertical": false
           },
           {
@@ -5188,19 +4594,19 @@
                   -56.57055987619131
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ],
                 [
-                  -11.86146341090515,
-                  -16.000000000000004
+                  -14.826829263631437,
+                  -20.000000000000004
                 ]
               ]
             },
             "target_area_sf": 732,
-            "actual_area_sf": 393.5914843485857,
+            "actual_area_sf": 361.24164413915815,
             "membership": 1,
-            "area_deviation": "-46.2%",
+            "area_deviation": "-50.7%",
             "is_vertical": false
           },
           {
@@ -5219,19 +4625,19 @@
                   -86.07545724558182
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ],
                 [
-                  -4.672610031032329,
-                  -16
+                  -5.840762538790413,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1150,
-            "actual_area_sf": 598.3405484356867,
+            "actual_area_sf": 579.6640367130508,
             "membership": 1,
-            "area_deviation": "-48.0%",
+            "area_deviation": "-49.6%",
             "is_vertical": false
           },
           {
@@ -5250,19 +4656,19 @@
                   -115.5803546149723
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ],
                 [
-                  -0.5222740926687766,
-                  -16
+                  -0.6528426158359708,
+                  -20
                 ]
               ]
             },
             "target_area_sf": 1039,
-            "actual_area_sf": 615.2922508342929,
+            "actual_area_sf": 606.1510717108738,
             "membership": 1,
-            "area_deviation": "-40.8%",
+            "area_deviation": "-41.7%",
             "is_vertical": false
           },
           {
@@ -5289,19 +4695,19 @@
                   -99.59275867086598
                 ],
                 [
-                  11.062035572184762,
-                  -16
+                  13.827544465230957,
+                  -20
                 ],
                 [
-                  1.50909904586881,
-                  -16
+                  1.8863738073360103,
+                  -19.999999999999986
                 ]
               ]
             },
             "target_area_sf": 1261,
-            "actual_area_sf": 3735.9609131661887,
+            "actual_area_sf": 3692.9726987977674,
             "membership": 1,
-            "area_deviation": "+196.3%",
+            "area_deviation": "+192.9%",
             "is_vertical": false
           }
         ]
@@ -5347,7 +4753,7 @@
     ],
     "metrics": {
       "total_floors": 8,
-      "total_spaces": 198,
+      "total_spaces": 165,
       "cohomology_obstruction": 0
     }
   }
