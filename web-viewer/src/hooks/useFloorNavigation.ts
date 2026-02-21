@@ -28,26 +28,33 @@ export const useFloorNavigation = (
     [sortedFloors]
   );
 
-  // Initialize with lazy function that returns first floor index
-  const [currentFloorIndex, setCurrentFloorIndex] = useState<number>(() => 
-    sortedFloors.length > 0 ? sortedFloors[0].floor_index : 0
-  );
+  // Prefer floor 1 (first residential) as default
+  const defaultFloor = useMemo(() => {
+    if (sortedFloors.length === 0) return 0;
+    const floor1 = sortedFloors.find(f => f.floor_index === 1);
+    return floor1 ? 1 : sortedFloors[0].floor_index;
+  }, [sortedFloors]);
+
+  const [currentFloorIndex, setCurrentFloorIndex] = useState<number>(0);
+  const [initialized, setInitialized] = useState(false);
 
   // Get current floor data
-  const currentFloor = useMemo(() => 
+  const currentFloor = useMemo(() =>
     sortedFloors.find(f => f.floor_index === currentFloorIndex) || null,
     [sortedFloors, currentFloorIndex]
   );
 
-  // Reset floor index when floors data changes and current index is invalid
-  // This is an intentional sync of external prop to internal state
+  // Jump to floor 1 when data first loads, or reset if current floor is invalid
   useEffect(() => {
-    if (sortedFloors.length > 0 && !floorIndices.includes(currentFloorIndex)) {
-      // Intentional state sync when data source changes
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setCurrentFloorIndex(sortedFloors[0].floor_index);
+    if (sortedFloors.length > 0) {
+      if (!initialized) {
+        setCurrentFloorIndex(defaultFloor);
+        setInitialized(true);
+      } else if (!floorIndices.includes(currentFloorIndex)) {
+        setCurrentFloorIndex(defaultFloor);
+      }
     }
-  }, [sortedFloors, floorIndices, currentFloorIndex]);
+  }, [sortedFloors, floorIndices, currentFloorIndex, defaultFloor, initialized]);
 
   const goToFloor = useCallback((index: number) => {
     if (floorIndices.includes(index)) {
