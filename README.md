@@ -334,12 +334,6 @@ In general, the logic should start with maximizing FAR reasonably using double l
  
 
 
- 
-
-Those chamfered corners on the inner edge can be tricky as well as the alignment, however I was able to fix the orthogonality. I was wondering (and the other archs feel free to chime in here) if something like this may work (or is at least headed in the right direction). Will the corridors for access to corner units work in general or should i try to work out the chamfer/offset solution. 
-
-
-
 
 Below are some examples how we go about corners, both inside and outside. Tom if you have other examples, can you please also send?
 
