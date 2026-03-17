@@ -176,8 +176,13 @@ def fix_corner(spaces, corner_info, edge_dirs, edge_normals, depth, corr_w, cs):
 
         ext_dir = edge_dirs[curr_ei]
 
-        # Extension along adjacent edge: stop at unit_b's inner wall (v3)
-        delta_to_b_inner = vsub(verts_b[3], v2_a)
+        # Account for push_back: unit_b will be pushed forward, so use its
+        # pushed position as the extension/clamping target.
+        pushed_b0 = vadd(verts_b[0], vscale(ext_dir, push_back))
+        pushed_b3 = vadd(verts_b[3], vscale(ext_dir, push_back))
+
+        # Extension along adjacent edge: stop at unit_b's pushed inner wall
+        delta_to_b_inner = vsub(pushed_b3, v2_a)
         ext_amount = dot(delta_to_b_inner, ext_dir)
         if ext_amount < 3:
             ext_amount = 3
@@ -186,19 +191,28 @@ def fix_corner(spaces, corner_info, edge_dirs, edge_normals, depth, corr_w, cs):
         ext_v2 = vadd(v2_a, vscale(ext_dir, ext_amount))  # inner extension corner
 
         # Also extend v4,v5 (the original inner vertices) perpendicular toward
-        # unit_b's outer wall (v0 side). This makes the L reach the neighboring
-        # unit's wall in both directions.
+        # unit_b's pushed outer wall (v0 side).
         perp_dir = edge_normals[prev_ei]  # inward normal of unit_a's edge
-        delta_to_b_outer = vsub(verts_b[0], v1_a)
+        delta_to_b_outer = vsub(pushed_b0, v1_a)
         perp_amount = dot(delta_to_b_outer, perp_dir)
 
-        # Move the original inner vertices (v2, v3 of original = v4, v5 of L)
-        # to align with unit_b's outer wall
+        # Move v2 (corner-adjacent inner vertex) fully to unit_b's outer wall.
         moved_v2 = vadd(verts_a[2], vscale(perp_dir, perp_amount))
-        moved_v3 = vadd(verts_a[3], vscale(perp_dir, perp_amount))
 
-        # unit_a becomes 6-vertex L-shape: v0, v1, ext_v1, ext_v2, moved_v2, moved_v3
-        new_verts_a = [verts_a[0], verts_a[1], ext_v1, ext_v2, moved_v2, moved_v3]
+        # Move v3 (far-from-corner inner vertex) perpendicular too, but clamp
+        # so it doesn't extend past unit_b's pushed inner-start boundary.
+        delta_v3_to_b_inner = vsub(pushed_b3, verts_a[3])
+        max_perp_v3 = dot(delta_v3_to_b_inner, perp_dir)
+        clamped_perp_v3 = min(perp_amount, max(0, max_perp_v3))
+        moved_v3 = vadd(verts_a[3], vscale(perp_dir, clamped_perp_v3))
+
+        # When clamping occurred, add a step vertex at v2's position (but at
+        # the clamped depth) to avoid a diagonal edge cutting through neighbors.
+        if clamped_perp_v3 < perp_amount - 0.1:
+            step_v = vadd(verts_a[2], vscale(perp_dir, clamped_perp_v3))
+            new_verts_a = [verts_a[0], verts_a[1], ext_v1, ext_v2, moved_v2, step_v, moved_v3]
+        else:
+            new_verts_a = [verts_a[0], verts_a[1], ext_v1, ext_v2, moved_v2, moved_v3]
 
         # Push back unit_b: move v0 and v3 by push_back along edge_dirs[curr_ei]
         new_verts_b = list(verts_b)
@@ -215,8 +229,14 @@ def fix_corner(spaces, corner_info, edge_dirs, edge_normals, depth, corr_w, cs):
 
         ext_dir = vneg(edge_dirs[curr_ei])  # back toward the corner
 
-        # Extension along adjacent edge: stop at unit_a's inner wall (v2)
-        delta_to_a_inner = vsub(verts_a[2], v3_b)
+        # Account for push_back: unit_a will be pushed back, so use its
+        # pushed position as the extension/clamping target.
+        push_dir = vneg(edge_dirs[prev_ei])
+        pushed_a1 = vadd(verts_a[1], vscale(push_dir, push_back))
+        pushed_a2 = vadd(verts_a[2], vscale(push_dir, push_back))
+
+        # Extension along adjacent edge: stop at unit_a's pushed inner wall
+        delta_to_a_inner = vsub(pushed_a2, v3_b)
         ext_amount = dot(delta_to_a_inner, ext_dir)
         if ext_amount < 3:
             ext_amount = 3
@@ -225,16 +245,28 @@ def fix_corner(spaces, corner_info, edge_dirs, edge_normals, depth, corr_w, cs):
         ext_v3 = vadd(v3_b, vscale(ext_dir, ext_amount))  # inner extension corner
 
         # Also extend v4,v5 (the original inner vertices) perpendicular toward
-        # unit_a's outer wall (v1 side).
+        # unit_a's pushed outer wall (v1 side).
         perp_dir = edge_normals[curr_ei]  # inward normal of unit_b's edge
-        delta_to_a_outer = vsub(verts_a[1], v0_b)
+        delta_to_a_outer = vsub(pushed_a1, v0_b)
         perp_amount = dot(delta_to_a_outer, perp_dir)
 
-        moved_v2 = vadd(verts_b[2], vscale(perp_dir, perp_amount))
+        # Move v3 (corner-adjacent inner vertex) fully to unit_a's outer wall.
         moved_v3_orig = vadd(verts_b[3], vscale(perp_dir, perp_amount))
 
-        # unit_b becomes 6-vertex: ext_v0, v0, v1, moved_v2, moved_v3, ext_v3
-        new_verts_b = [ext_v0, verts_b[0], verts_b[1], moved_v2, moved_v3_orig, ext_v3]
+        # Move v2 (far-from-corner inner vertex) perpendicular too, but clamp
+        # so it doesn't extend past unit_a's pushed inner-end boundary.
+        delta_v2_to_a_inner = vsub(pushed_a2, verts_b[2])
+        max_perp_v2 = dot(delta_v2_to_a_inner, perp_dir)
+        clamped_perp_v2 = min(perp_amount, max(0, max_perp_v2))
+        moved_v2 = vadd(verts_b[2], vscale(perp_dir, clamped_perp_v2))
+
+        # When clamping occurred, add a step vertex at v3's position (but at
+        # the clamped depth) to avoid a diagonal edge cutting through neighbors.
+        if clamped_perp_v2 < perp_amount - 0.1:
+            step_v = vadd(verts_b[3], vscale(perp_dir, clamped_perp_v2))
+            new_verts_b = [ext_v0, verts_b[0], verts_b[1], moved_v2, step_v, moved_v3_orig, ext_v3]
+        else:
+            new_verts_b = [ext_v0, verts_b[0], verts_b[1], moved_v2, moved_v3_orig, ext_v3]
 
         # Push back unit_a: move v1 and v2 backward along edge_dirs[prev_ei]
         push_dir = vneg(edge_dirs[prev_ei])
