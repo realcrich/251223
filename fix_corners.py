@@ -43,6 +43,10 @@ def poly_area(pts):
     n = len(pts)
     return abs(sum(pts[i][0]*pts[(i+1)%n][1] - pts[(i+1)%n][0]*pts[i][1] for i in range(n))) / 2
 
+def tri_area(a, b, c):
+    """Area of triangle abc."""
+    return abs((b[0]-a[0])*(c[1]-a[1]) - (c[0]-a[0])*(b[1]-a[1])) / 2
+
 def centroid(pts):
     n = len(pts)
     return (sum(p[0] for p in pts)/n, sum(p[1] for p in pts)/n)
@@ -62,7 +66,7 @@ def recover_geometry(meta):
     depth = meta['depth']
     corr_w = meta['corr_w']
     door_w = 4
-    cs = depth + door_w  # corner span along each edge
+    cs = meta.get('cs', depth + door_w)  # corner span along each edge
     return rect, edge_dirs, edge_normals, edge_lens, depth, corr_w, cs
 
 
@@ -208,9 +212,17 @@ def fix_corner(spaces, corner_info, edge_dirs, edge_normals, depth, corr_w, cs):
 
         # When clamping occurred, add a step vertex at v2's position (but at
         # the clamped depth) to avoid a diagonal edge cutting through neighbors.
+        # If the triangle v4-v5-v6 is too small to justify the complexity,
+        # collapse it: drop v5 and align v4 to v6's perpendicular depth so the
+        # wall between them runs straight.
+        STEP_AREA_THRESH = 50  # sqft — below this, collapse the step vertex
         if clamped_perp_v3 < perp_amount - 0.1:
             step_v = vadd(verts_a[2], vscale(perp_dir, clamped_perp_v3))
-            new_verts_a = [verts_a[0], verts_a[1], ext_v1, ext_v2, moved_v2, step_v, moved_v3]
+            if tri_area(moved_v2, step_v, moved_v3) < STEP_AREA_THRESH:
+                moved_v2_aligned = vadd(verts_a[2], vscale(perp_dir, clamped_perp_v3))
+                new_verts_a = [verts_a[0], verts_a[1], ext_v1, ext_v2, moved_v2_aligned, moved_v3]
+            else:
+                new_verts_a = [verts_a[0], verts_a[1], ext_v1, ext_v2, moved_v2, step_v, moved_v3]
         else:
             new_verts_a = [verts_a[0], verts_a[1], ext_v1, ext_v2, moved_v2, moved_v3]
 
@@ -262,9 +274,16 @@ def fix_corner(spaces, corner_info, edge_dirs, edge_normals, depth, corr_w, cs):
 
         # When clamping occurred, add a step vertex at v3's position (but at
         # the clamped depth) to avoid a diagonal edge cutting through neighbors.
+        # If the triangle is too small, collapse it: drop the step vertex and
+        # align moved_v3 to moved_v2's perpendicular depth for a straight wall.
+        STEP_AREA_THRESH = 50  # sqft
         if clamped_perp_v2 < perp_amount - 0.1:
             step_v = vadd(verts_b[3], vscale(perp_dir, clamped_perp_v2))
-            new_verts_b = [ext_v0, verts_b[0], verts_b[1], moved_v2, step_v, moved_v3_orig, ext_v3]
+            if tri_area(moved_v2, step_v, moved_v3_orig) < STEP_AREA_THRESH:
+                moved_v3_aligned = vadd(verts_b[3], vscale(perp_dir, clamped_perp_v2))
+                new_verts_b = [ext_v0, verts_b[0], verts_b[1], moved_v2, moved_v3_aligned, ext_v3]
+            else:
+                new_verts_b = [ext_v0, verts_b[0], verts_b[1], moved_v2, step_v, moved_v3_orig, ext_v3]
         else:
             new_verts_b = [ext_v0, verts_b[0], verts_b[1], moved_v2, moved_v3_orig, ext_v3]
 

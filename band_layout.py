@@ -142,11 +142,35 @@ def compute_layout(data):
 
     depth = avg_depth
     min_dim = min(rw,rh)
-    max_depth = (min_dim - corr_w - 8) / 2
-    if depth > max_depth: depth = max(12, max_depth)
+
+    # Pre-check: simulate layout mode with standard depth formula to decide
+    # whether to use single-corridor or double-corridor cross-section.
+    test_max_depth = (min_dim - corr_w - 8) / 2
+    test_depth = min(avg_depth, max(12, test_max_depth))
+    test_inner_w = rw - 2*test_depth
+    test_inner_h = rh - 2*test_depth
+    test_core_w = test_inner_w - 2*corr_w
+    test_core_h = test_inner_h - 2*corr_w
+    test_min_core = min(test_core_w, test_core_h) if (test_core_w > 0 and test_core_h > 0) else 0
+    test_inner_depth = min(test_depth, (test_min_core - 2*corr_w - 8) / 2) if test_min_core > 0 else 0
+
+    # Standard depth (used for cs calculation in all modes)
+    std_max_depth = (min_dim - corr_w - 8) / 2
+    std_depth = min(avg_depth, max(12, std_max_depth))
+
+    if test_inner_depth >= 12:
+        # Courtyard-capable — standard formula preserves core space
+        if depth > std_max_depth: depth = max(12, std_max_depth)
+    elif test_core_w > 4 and test_core_h > 4:
+        # Core usable for core_rooms/notch — keep standard formula
+        if depth > std_max_depth: depth = max(12, std_max_depth)
+    else:
+        # True basic mode — single corridor between opposing unit bands.
+        # Force depth so units fill to exactly one corridor width apart.
+        depth = (min_dim - corr_w) / 2
 
     door_w = 4
-    cs = depth + door_w
+    cs = std_depth + door_w
 
     ca,sa = math.cos(rangle),math.sin(rangle)
     dir_x,dir_y = (ca,sa),(-sa,ca)
@@ -360,7 +384,7 @@ def compute_layout(data):
 
     return {
         'boundary':boundary,'rect':rect,'corr_rect':corr_rect,'core_rect':core_rect,
-        'units':units,'corners':corners,'depth':depth,'corr_w':corr_w,
+        'units':units,'corners':corners,'depth':depth,'corr_w':corr_w,'cs':cs,
         'fp_area':fp_area,'pid':pid,'rw':rw,'rh':rh,'avg_depth':avg_depth,
         'layout_mode':layout_mode,
         'inner_units':inner_units,'inner_corners':inner_corners,
@@ -738,7 +762,7 @@ def write_solver_json(data, layout, output_path):
             'rect_corners':[[round(p[0],2),round(p[1],2)] for p in layout['rect']],
             'rangle_deg':round(math.degrees(layout['rangle']),4),
             'rw':round(layout['rw'],2),'rh':round(layout['rh'],2),
-            'depth':round(layout['depth'],2),'corr_w':layout['corr_w'],
+            'depth':round(layout['depth'],2),'corr_w':layout['corr_w'],'cs':round(layout['cs'],2),
             'layout_mode':layout.get('layout_mode','basic'),
         },
     }
